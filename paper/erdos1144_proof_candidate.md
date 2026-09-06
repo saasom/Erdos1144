@@ -33,12 +33,12 @@ $$
 a(t)=A(e^t),\quad m(t)=e^{-t/2}M(e^t),\quad r(t)=R(e^t).
 $$
 
-Set $a(t)=m(t)=0$ for $t<0$.
+Set $a(t)=m(t)=0$ for $t\lt{}0$.
 
 The proposed conclusion is
 
 $$
-\mathbb P\negthinspace{}\left(\limsup_{N\to\infty}S(N)/\sqrt N=+\infty\right)=1.
+ℙ\negthinspace{}\left(\limsup_{N\to\infty}S(N)/\sqrt N=+\infty\right)=1.
 \qquad\text{(T)}
 $$
 
@@ -55,8 +55,8 @@ E(x)=-x^{-1/2}\sum_{d\le x}g(d)\lbrace{}\sqrt{x/d}\rbrace{},
 $$
 
 $$
-\mathbb E E(x)^2\le1,\qquad
-\mathbb E A(e^t)^2\ll t+1.
+𝔼 E(x)^2\le1,\qquad
+𝔼 A(e^t)^2\ll t+1.
 \qquad\text{(2)}
 $$
 
@@ -121,7 +121,7 @@ $$
 Conditional on the multiplicative signs, define the centered Gaussian field
 
 $$
-H_i=\sum_{Y<p\le e^{u_i}}N_p\frac{M(e^{u_i}/p)}{e^{u_i/2}}.
+H_i=\sum_{Y\lt{}p\le e^{u_i}}N_p\frac{M(e^{u_i}/p)}{e^{u_i/2}}.
 \qquad\text{(7)}
 $$
 
@@ -138,10 +138,10 @@ Here is the quantitative justification for that consequence. Use Harper's parame
 
 ## 2. A prime Gaussian sum can be coupled to logarithmic white noise
 
-We give the approximation needed for both complete and squarefree sums. Fix $1<\alpha<\beta$, and consider $O(T)$ deterministic points $t_i\in[\alpha T,\beta T]$. For $b=a$ or $b=m$, set
+We give the approximation needed for both complete and squarefree sums. Fix $1\lt{}\alpha\lt{}\beta$, and consider $O(T)$ deterministic points $t_i\in[\alpha T,\beta T]$. For $b=a$ or $b=m$, set
 
 $$
-P_i^{(b)}=\sum_{e^T<p\le e^{t_i}}N_p p^{-1/2}b(t_i-\log p),
+P_i^{(b)}=\sum_{e^T\lt{}p\le e^{t_i}}N_p p^{-1/2}b(t_i-\log p),
 \quad
 B_i^{(b)}=\int_T^\infty b(t_i-v)\frac{dB(v)}{\sqrt v}.
 \qquad\text{(9)}
@@ -150,7 +150,7 @@ $$
 There is a joint Gaussian coupling, conditional on the multiplicative signs, for which
 
 $$
-\max_i|P_i^{(b)}-B_i^{(b)}|=o_{\mathbb P}(1).
+\max_i|P_i^{(b)}-B_i^{(b)}|=o_{ℙ}(1).
 \qquad\text{(10)}
 $$
 
@@ -158,10 +158,10 @@ The error is uniform over these grids and remains $o(1)$ under any fixed finite-
 
 ### Proof of the approximation
 
-First, for $0<h\le1$ and $L\ge1$,
+First, for $0\lt{}h\le1$ and $L\ge1$,
 
 $$
-\int_{-h}^L\mathbb E|a(v+h)-a(v)|^2\thinspace{}dv
+\int_{-h}^L𝔼|a(v+h)-a(v)|^2\thinspace{}dv
 \ll h(L+1)+h^2(L+1)^2.
 \qquad\text{(11)}
 $$
@@ -185,7 +185,7 @@ $$
 
 Indeed, each surviving square-correlated pair occurs in $O(1)$ such windows and has weight $O(h/\max(n,m))$. This is a comparison of **expected squares**, using nonnegative pair correlations; no pointwise comparison of signed sums is asserted.
 
-Choose $\delta=e^{-T^\nu}$, where $0<\nu<1/2$. These restrictions ensure that $\delta$ is smaller than every inverse power of $T$ and larger than the classical prime-number-theorem relative error. Partition the log-prime interval into bins of length $\delta$. For a full bin $J\subset[T,\beta T]$, the classical estimate for $\vartheta$ and partial summation give, uniformly,
+Choose $\delta=e^{-T^\nu}$, where $0\lt{}\nu\lt{}1/2$. These restrictions ensure that $\delta$ is smaller than every inverse power of $T$ and larger than the classical prime-number-theorem relative error. Partition the log-prime interval into bins of length $\delta$. For a full bin $J\subset[T,\beta T]$, the classical estimate for $\vartheta$ and partial summation give, uniformly,
 
 $$
 \sum_{\log p\in J}\frac{\log p}{p}
@@ -210,7 +210,7 @@ $$
 O\negthinspace{}\left(T(\delta^{-1}e^{-c\sqrt T}+\delta)^2\right)
 $$
 
-per coordinate, since $\int_0^{(\beta-1)T+1}\mathbb E a(v)^2\thinspace{}dv\ll T^2$.
+per coordinate, since $\int_0^{(\beta-1)T+1}𝔼 a(v)^2\thinspace{}dv\ll T^2$.
 Replacing the Brownian step integrand by the actual integrand uses (11) again. A final partial bin is covered by the same enlarged-window estimate, including the possible jump at zero.
 
 Summing these errors over $O(T)$ coordinates gives $o(1)$, proving (10) by Markov's inequality. Conditioning on a fixed cylinder multiplies expectation bounds by at most the reciprocal of its probability. This proves the asserted conditional-law version.
@@ -220,7 +220,7 @@ Summing these errors over $O(T)$ coordinates gives $o(1)$, proving (10) by Marko
 Fix $\sigma>0$, write $V=1/\sigma$, and define the stationary centered Gaussian field with covariance
 
 $$
-Q_g(s,t)=\frac1V\int_{\mathbb R}
+Q_g(s,t)=\frac1V\int_{ℝ}
 m(s-v)m(t-v)e^{-\sigma(s+t-2v)}\thinspace{}dv.
 \qquad\text{(14)}
 $$
@@ -256,7 +256,7 @@ All assertions in this section remain valid under any fixed finite-prime conditi
 
 ## 4. Transfer from the stationary squarefree field to the complete field
 
-Write $X=e^T$, $j=\log T$. Fix $\gamma>3/4$ as in (3), choose fixed $1<\alpha<\beta<4/3$, and set
+Write $X=e^T$, $j=\log T$. Fix $\gamma>3/4$ as in (3), choose fixed $1\lt{}\alpha\lt{}\beta\lt{}4/3$, and set
 
 $$
 \begin{gathered}
@@ -273,7 +273,7 @@ The condition on $\kappa$ is derived from the tail estimate below. Let $t_i$ be 
 Define the stationary complete covariance
 
 $$
-Q_c(s,t)=\frac1T\int_{\mathbb R}
+Q_c(s,t)=\frac1T\int_{ℝ}
 a(s-v)a(t-v)e^{-\sigma(s+t-2v)}\thinspace{}dv.
 \qquad\text{(18)}
 $$
@@ -292,7 +292,7 @@ The density of (14) is the same expression with $\zeta$ omitted and $T$ replaced
 Set $H=j^2$. The portion of the squarefree field (14) at $|\tau|>H$ has expected coordinate variance $O(1/H)$. Indeed, orthogonality gives
 
 $$
-\mathbb E|F_g(1/2+\sigma+i\tau)|^2
+𝔼|F_g(1/2+\sigma+i\tau)|^2
 =\sum_n\frac{\mu^2(n)}{n^{1+2\sigma}}\ll1/\sigma=V.
 $$
 
@@ -334,7 +334,7 @@ From (1)–(3), this is at most
 
 $$
 C K_f^2\thinspace{}\frac{e^{-2c_0W}}W j^{2\gamma}+V_E,\qquad
-\mathbb E V_E\ll e^{-2c_0W}/W.
+𝔼 V_E\ll e^{-2c_0W}/W.
 \qquad\text{(24)}
 $$
 
@@ -345,7 +345,7 @@ $$
 j^{2\gamma+1}e^{-2c_0W}/W\to0.
 $$
 
-The error term in (24) is handled by its expectation. Hence the maximum stationary-extension error is $o_{\mathbb P}(1)$, also under any fixed cylinder. The diverging maximum in (22) therefore holds for $Q_{c,\mathrm{tr}}$.
+The error term in (24) is handled by its expectation. Hence the maximum stationary-extension error is $o_{ℙ}(1)$, also under any fixed cylinder. The diverging maximum in (22) therefore holds for $Q_{c,\mathrm{tr}}$.
 
 ## 5. The actual complete fresh Gaussian and Rademacher fields
 
@@ -357,7 +357,7 @@ $$
 \qquad\text{(25)}
 $$
 
-Set $\Delta=\operatorname{diag}(e^{-\sigma(t_i-t_0)})$. An exact pointwise comparison of the scalar integration weights gives
+Set $\Delta=\mathrm{diag}(e^{-\sigma(t_i-t_0)})$. An exact pointwise comparison of the scalar integration weights gives
 
 $$
 \Delta^{-1}Q_{c,\mathrm{tr}}\Delta^{-1}
@@ -373,16 +373,16 @@ The scalar factor on the right stays bounded, since $\sigma D=1/W$; the diagonal
 Thus Anderson's inequality and (22)–(24) give a diverging absolute maximum for (25). Approximation (10) transfers this to the Gaussian field
 
 $$
-Z_i=\frac1{e^{t_i/2}}\sum_{e^T<p\le e^{t_i}}N_pS(e^{t_i}/p).
+Z_i=\frac1{e^{t_i/2}}\sum_{e^T\lt{}p\le e^{t_i}}N_pS(e^{t_i}/p).
 \qquad\text{(27)}
 $$
 
-For clarity about conditioning: (14) and (18) use unbounded inner times. Whenever conditioning on the old signs $p\le X$, complete them with an **auxiliary independent continuation**, independent of the Gaussian noises. It agrees with the actual old function. The fields (25) and (27) use only old values because $t_i-T<T$; they are unchanged by the continuation. All spectral and tail comparisons may be conditioned on the auxiliary full function and then averaged over its continuation. The actual fresh Rademacher signs are never included in this conditioning. Although the auxiliary continuation may change with $T$, its full law is always the same fixed-prefix law $Q$. Thus the truncation of $K_f$ in the tail argument uses a tight family with one fixed distribution, not a common pathwise constant across continuations.
+For clarity about conditioning: (14) and (18) use unbounded inner times. Whenever conditioning on the old signs $p\le X$, complete them with an **auxiliary independent continuation**, independent of the Gaussian noises. It agrees with the actual old function. The fields (25) and (27) use only old values because $t_i-T\lt{}T$; they are unchanged by the continuation. All spectral and tail comparisons may be conditioned on the auxiliary full function and then averaged over its continuation. The actual fresh Rademacher signs are never included in this conditioning. Although the auxiliary continuation may change with $T$, its full law is always the same fixed-prefix law $Q$. Thus the truncation of $K_f$ in the tail argument uses a tight family with one fixed distribution, not a common pathwise constant across continuations.
 
 Finally replace the $N_p$'s in (27) by the actual fresh signs:
 
 $$
-Y_i=\frac1{e^{t_i/2}}\sum_{e^T<p\le e^{t_i}}\varepsilon_pS(e^{t_i}/p).
+Y_i=\frac1{e^{t_i/2}}\sum_{e^T\lt{}p\le e^{t_i}}\varepsilon_pS(e^{t_i}/p).
 \qquad\text{(28)}
 $$
 
@@ -394,7 +394,7 @@ m_T^2 e^{(\beta-3/2)T}
 \qquad\text{(29)}
 $$
 
-Both exponents are negative because $\beta<4/3$. The same bounds apply to any old-measurable retained subset.
+Both exponents are negative because $\beta\lt{}4/3$. The same bounds apply to any old-measurable retained subset.
 
 We have therefore established the following robust crossing statement. For every fixed finite-prime conditional law $Q$, every deterministic narrow grid as above, every old-measurable retained subset $J_T$ of fixed positive density, and every fixed $K>0$,
 
@@ -420,9 +420,9 @@ $$
 C(f)=\sup_{t\ge0}a(t),\qquad E_M=\lbrace{}C(f)\le M\rbrace{}.
 $$
 
-The failure of (T) is $\lbrace{}C(f)<\infty\rbrace{}$: the function $a$ is bounded on compact intervals, and integer and real positive excursions are equivalent.
+The failure of (T) is $\lbrace{}C(f)\lt{}\infty\rbrace{}$: the function $a$ is bounded on compact intervals, and integer and real positive excursions are equivalent.
 
-Suppose this failure event has positive probability. By conditional-probability convergence along finite prime prefixes, and then $E_M\uparrow\lbrace{}C<\infty\rbrace{}$, for any sufficiently small fixed $\delta>0$ there exist a finite-prime cylinder $C_0$, its conditional law $Q$, and finite $M\ge1$, such that
+Suppose this failure event has positive probability. By conditional-probability convergence along finite prime prefixes, and then $E_M\uparrow\lbrace{}C\lt{}\infty\rbrace{}$, for any sufficiently small fixed $\delta>0$ there exist a finite-prime cylinder $C_0$, its conditional law $Q$, and finite $M\ge1$, such that
 
 $$
 Q(E_M)>1-\delta.
@@ -441,14 +441,14 @@ $$
 Thus, for every $b>0$,
 
 $$
-\int_{\alpha T}^{\beta T}Q(a(t)<-b)\thinspace{}dt
+\int_{\alpha T}^{\beta T}Q(a(t)\lt{}-b)\thinspace{}dt
 \le \delta(\beta-\alpha)T+e^\beta MT/b.
 \qquad\text{(34)}
 $$
 
-Let $\mathcal F_X=\sigma(\varepsilon_p:p\le X)$, $X=e^T$, and
-$w_T(t)=\mathbb E[A(e^t)\mid\mathcal F_X]$.
-For $t<2T$, complete multiplicativity gives the exact splitting
+Let $ℱ_X=\sigma(\varepsilon_p:p\le X)$, $X=e^T$, and
+$w_T(t)=𝔼[A(e^t)\midℱ_X]$.
+For $t\lt{}2T$, complete multiplicativity gives the exact splitting
 
 $$
 a(t)=w_T(t)+Y_t
@@ -458,21 +458,21 @@ $$
 with the fresh linear field (28). Its conditional symmetry implies, under $Q$ once the fixed prefix lies below $X$,
 
 $$
-Q(w_T(t)<-b)\le2Q(a(t)<-b).
+Q(w_T(t)\lt{}-b)\le2Q(a(t)\lt{}-b).
 \qquad\text{(36)}
 $$
 
 Partition almost all of $[\alpha T,\beta T]$ into blocks of length $2\pi m_T$, where $m_T=\lfloor D/(2\pi)\rfloor$, and average a $2\pi$-spaced grid over its shift in $[0,2\pi)$. Averaging jointly over blocks and shifts, (34)–(36) yield a **deterministic** block and shift with
 
 $$
-\mathbb E_Q\frac{\#\lbrace{}i:w_T(t_i)<-b\rbrace{}}{m_T}
+𝔼_Q\frac{\\#\lbrace{}i:w_T(t_i)\lt{}-b\rbrace{}}{m_T}
 \le2\delta+\frac{2e^\beta M}{b(\beta-\alpha)}+o(1).
 \qquad\text{(37)}
 $$
 
 The discarded interval has length $O(D)=o(T)$. Choosing the block by these probabilities uses no realized signs or future randomness. In particular there is no factor $T/D$ in (37).
 
-Fix $0<\rho<1$. Markov's inequality shows that the good set
+Fix $0\lt{}\rho\lt{}1$. Markov's inequality shows that the good set
 
 $$
 G_T=\lbrace{}i:w_T(t_i)\ge-b\rbrace{}
@@ -497,9 +497,9 @@ $$
 $$
 
 Choose $\delta>0$ small enough that
-$\delta+2\delta/(1-\rho)<1/2$, obtain $Q,M$ from (32), and then choose the fixed $b$ sufficiently large. This contradicts (39).
+$\delta+2\delta/(1-\rho)\lt{}1/2$, obtain $Q,M$ from (32), and then choose the fixed $b$ sufficiently large. This contradicts (39).
 
-Hence $\mathbb P(C(f)<\infty)=0$. Since $a(t)$ is bounded on every compact interval, its positive limsup is infinite almost surely. If $S(x)/\sqrt x>K>0$, then for $N=\lfloor x\rfloor$,
+Hence $ℙ(C(f)\lt{}\infty)=0$. Since $a(t)$ is bounded on every compact interval, its positive limsup is infinite almost surely. If $S(x)/\sqrt x>K>0$, then for $N=\lfloor x\rfloor$,
 $S(N)/\sqrt N\ge S(x)/\sqrt x>K$; the indices tend to infinity. This proves (T).
 
 ## Checks and scope
