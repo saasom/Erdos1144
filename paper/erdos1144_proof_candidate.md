@@ -38,8 +38,8 @@ Set $a(t)=m(t)=0$ for $t<0$.
 The proposed conclusion is
 
 $$
-\mathbb P\!\left(\limsup_{N\to\infty}S(N)/\sqrt N=+\infty\right)=1.
-\tag{T}
+\mathbb P\negthinspace{}\left(\limsup_{N\to\infty}S(N)/\sqrt N=+\infty\right)=1.
+\qquad\text{(T)}
 $$
 
 All limits below can be taken along positive integral $T\to\infty$. Constants in estimates under a fixed finite-prime conditional law may depend on that law. The final positive crossing probability does not.
@@ -50,21 +50,21 @@ Squarefree orthogonality and the decomposition $n=dr^2$ give
 
 $$
 A(x)=R(x)+E(x),\qquad
-E(x)=-x^{-1/2}\sum_{d\le x}g(d)\{\sqrt{x/d}\},
-\tag{1}
+E(x)=-x^{-1/2}\sum_{d\le x}g(d)\lbrace{}\sqrt{x/d}\rbrace{},
+\qquad\text{(1)}
 $$
 
 $$
 \mathbb E E(x)^2\le1,\qquad
 \mathbb E A(e^t)^2\ll t+1.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 We use [Atherfold's weighted upper bound, Theorem 1](https://arxiv.org/html/2501.11076v4): for any fixed $\gamma>3/4$, almost surely
 
 $$
 |r(t)|\le K_f(\log(t+2))^\gamma\quad(t\ge0)
-\tag{3}
+\qquad\text{(3)}
 $$
 
 for a finite random $K_f$.
@@ -75,7 +75,7 @@ $$
 F_c(s)=\sum_n f(n)n^{-s}
 =\zeta(2s)F_g(s),\qquad
 F_g(s)=\sum_n g(n)n^{-s}.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 In particular $F_c(s)>0$ for real $s>1/2$.
@@ -84,9 +84,9 @@ $M(x)\ll_f\sqrt x(\log(2x))^2$ almost surely, and summing $M(x/r^2)$ gives
 $S(x)\ll_f\sqrt x(\log(2x))^3$. Partial summation and analytic continuation from $\Re s>1$ then justify (4) and
 
 $$
-\int_0^\infty a(t)e^{-zt}\,dt
+\int_0^\infty a(t)e^{-zt}\thinspace{}dt
 =\frac{F_c(1/2+z)}{1/2+z},\qquad \Re z>0.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 For positivity, apply the same maximal argument to the prime-supported sign sequence. It gives
@@ -94,9 +94,9 @@ $\sum_{p\le x}\varepsilon_p\ll_f\sqrt x(\log(2x))^2$, so
 $\sum_p\varepsilon_p p^{-s}$ converges locally uniformly almost surely on $\Re s>1/2$. The prime-power terms of degree at least two converge absolutely there. Continuing the Euler product from $\Re s>1$ therefore gives
 
 $$
-F_c(s)=\exp\!\left\{\sum_p\varepsilon_p p^{-s}
-+\sum_p\sum_{k\ge2}\frac{\varepsilon_p^k}{k p^{ks}}\right\}.
-\tag{5a}
+F_c(s)=\exp\negthinspace{}\left\lbrace{}\sum_p\varepsilon_p p^{-s}
++\sum_p\sum_{k\ge2}\frac{\varepsilon_p^k}{k p^{ks}}\right\rbrace{}.
+\qquad\text{(5a)}
 $$
 
 The exponent is real for real $s>1/2$, proving the positivity used below.
@@ -105,7 +105,7 @@ We also use the uniform estimate
 
 $$
 |1/\zeta(v+it)|\ll\log(|t|+2)\quad(v\ge1).
-\tag{6}
+\qquad\text{(6)}
 $$
 
 For large $|t|$, this follows, for example, from [Leong, Corollary 4](https://arxiv.org/html/2405.04869v5); bounded heights follow from zero-freeness on $\Re s\ge1$, continuity of $1/\zeta$ at its zero at $s=1$, and absolute convergence when $v$ is large.
@@ -122,14 +122,14 @@ Conditional on the multiplicative signs, define the centered Gaussian field
 
 $$
 H_i=\sum_{Y<p\le e^{u_i}}N_p\frac{M(e^{u_i}/p)}{e^{u_i/2}}.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 There are events of probability tending to one on which, **simultaneously for all retained subsets** of size $V^{1-o(1)}$, the conditional probability that their absolute maximum exceeds
 
 $$
-L_V=(\log V)^{1/4}\exp\{-2\sqrt{\log\log V}\}
-\tag{8}
+L_V=(\log V)^{1/4}\exp\lbrace{}-2\sqrt{\log\log V}\rbrace{}
+\qquad\text{(8)}
 $$
 
 tends to one.
@@ -144,14 +144,14 @@ $$
 P_i^{(b)}=\sum_{e^T<p\le e^{t_i}}N_p p^{-1/2}b(t_i-\log p),
 \quad
 B_i^{(b)}=\int_T^\infty b(t_i-v)\frac{dB(v)}{\sqrt v}.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 There is a joint Gaussian coupling, conditional on the multiplicative signs, for which
 
 $$
 \max_i|P_i^{(b)}-B_i^{(b)}|=o_{\mathbb P}(1).
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The error is uniform over these grids and remains $o(1)$ under any fixed finite-prime conditional law. The Gaussian noises are independent of all multiplicative signs.
@@ -161,9 +161,9 @@ The error is uniform over these grids and remains $o(1)$ under any fixed finite-
 First, for $0<h\le1$ and $L\ge1$,
 
 $$
-\int_{-h}^L\mathbb E|a(v+h)-a(v)|^2\,dv
+\int_{-h}^L\mathbb E|a(v+h)-a(v)|^2\thinspace{}dv
 \ll h(L+1)+h^2(L+1)^2.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 The change in $e^{-v/2}$ contributes $O(h^2(L+1)^2)$, by (2). For the summation change, expand the expected square. A pair $n,m$ survives only if $nm$ is a square. Its integrated weight is at most $Ch/\max(n,m)$, and it occurs only if $|\log(n/m)|\le h$. Write $n=dA^2,m=dB^2$, with $d$ squarefree. The diagonal contributes $O(h(L+1))$. For $B>A$, the number of permissible $B$'s is $O(hA)$, and hence the off-diagonal contribution is at most
@@ -180,7 +180,7 @@ We also need a discrete envelope version of (11). For any grid of spacing $h$, e
 
 $$
 O(h(L+1)+h^2(L+1)^2).
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Indeed, each surviving square-correlated pair occurs in $O(1)$ such windows and has weight $O(h/\max(n,m))$. This is a comparison of **expected squares**, using nonnegative pair correlations; no pointwise comparison of signed sums is asserted.
@@ -192,11 +192,11 @@ $$
 =\delta(1+\epsilon_J),\qquad
 \max_J|\epsilon_J|
 \ll \delta^{-1}e^{-c\sqrt T}+\delta.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Write each prime coefficient as
-$\sqrt{\log p/p}\,b(t_i-\log p)/\sqrt{\log p}$.
+$\sqrt{\log p/p}\thinspace{}b(t_i-\log p)/\sqrt{\log p}$.
 Replace its last factor by the bin-endpoint value. Equation (12), the upper bound in (13), and $v\asymp T$ show that the expected squared error per coordinate is
 
 $$
@@ -207,10 +207,10 @@ The variation of $v^{-1/2}$ contributes a smaller error.
 The weighted Gaussian sums on disjoint bins are independent. Couple each with a Brownian increment by using the same standard normal. The variance replacement contributes at most
 
 $$
-O\!\left(T(\delta^{-1}e^{-c\sqrt T}+\delta)^2\right)
+O\negthinspace{}\left(T(\delta^{-1}e^{-c\sqrt T}+\delta)^2\right)
 $$
 
-per coordinate, since $\int_0^{(\beta-1)T+1}\mathbb E a(v)^2\,dv\ll T^2$.
+per coordinate, since $\int_0^{(\beta-1)T+1}\mathbb E a(v)^2\thinspace{}dv\ll T^2$.
 Replacing the Brownian step integrand by the actual integrand uses (11) again. A final partial bin is covered by the same enlarged-window estimate, including the possible jump at zero.
 
 Summing these errors over $O(T)$ coordinates gives $o(1)$, proving (10) by Markov's inequality. Conditioning on a fixed cylinder multiplies expectation bounds by at most the reciprocal of its probability. This proves the asserted conditional-law version.
@@ -221,15 +221,15 @@ Fix $\sigma>0$, write $V=1/\sigma$, and define the stationary centered Gaussian 
 
 $$
 Q_g(s,t)=\frac1V\int_{\mathbb R}
-m(s-v)m(t-v)e^{-\sigma(s+t-2v)}\,dv.
-\tag{14}
+m(s-v)m(t-v)e^{-\sigma(s+t-2v)}\thinspace{}dv.
+\qquad\text{(14)}
 $$
 
 This is well-defined almost surely. Take a grid of spacing $2\pi$ and length
 
 $$
 D=V/W,\qquad W\to\infty,\qquad \log W=o(\log V).
-\tag{15}
+\qquad\text{(15)}
 $$
 
 Retain any fixed positive proportion of its points, with the selection measurable in the multiplicative signs.
@@ -244,7 +244,7 @@ Put $R_i=e^{-\sigma(u_i-V)}$. Restricting the integral in (14) to $v\ge V$ gives
 
 $$
 Q_g\succeq R C_H R,
-\tag{16}
+\qquad\text{(16)}
 $$
 
 because $e^{2\sigma(v-V)}/V\ge1/v$ there. The diagonal factors satisfy
@@ -262,10 +262,10 @@ $$
 \begin{gathered}
 c_0=\alpha-1,\qquad
 W=\kappa\log j,\qquad
-\kappa>\frac{\gamma+1/2}{c_0},\\
+\kappa>\frac{\gamma+1/2}{c_0},\cr
 \sigma=W/T,\quad V=1/\sigma=T/W,\quad D=T/W^2.
 \end{gathered}
-\tag{17}
+\qquad\text{(17)}
 $$
 
 The condition on $\kappa$ is derived from the tail estimate below. Let $t_i$ be any deterministic $2\pi$-spaced grid of width at most $D$ in $[\alpha T,\beta T]$, with $\asymp D$ points. Retain any fixed positive proportion.
@@ -274,8 +274,8 @@ Define the stationary complete covariance
 
 $$
 Q_c(s,t)=\frac1T\int_{\mathbb R}
-a(s-v)a(t-v)e^{-\sigma(s+t-2v)}\,dv.
-\tag{18}
+a(s-v)a(t-v)e^{-\sigma(s+t-2v)}\thinspace{}dv.
+\qquad\text{(18)}
 $$
 
 By Parseval and (4), its spectral density is
@@ -284,7 +284,7 @@ $$
 \frac1{2\pi T}
 \left|\frac{\zeta(1+2\sigma+2i\tau)F_g(1/2+\sigma+i\tau)}
 {1/2+\sigma+i\tau}\right|^2.
-\tag{19}
+\qquad\text{(19)}
 $$
 
 The density of (14) is the same expression with $\zeta$ omitted and $T$ replaced by $V$.
@@ -300,7 +300,7 @@ For $O(T)$ Gaussian coordinates the expected squared maximum of this high-freque
 
 $$
 O(\log(T+2)/H)=o(1).
-\tag{20}
+\qquad\text{(20)}
 $$
 
 This remains true under a fixed cylinder. Consequently the low-frequency squarefree field still has absolute maximum $\gg L_V$ with probability tending to one.
@@ -309,14 +309,14 @@ By (6), on $|\tau|\le H$ the complete density (19) dominates the low-frequency s
 
 $$
 \frac{c}{W\log^2(H+2)}.
-\tag{21}
+\qquad\text{(21)}
 $$
 
 A second application of Anderson's inequality gives a diverging absolute maximum for (18), of size at least a constant multiple of
 
 $$
 \frac{L_V}{\sqrt W\log(H+2)}\longrightarrow\infty.
-\tag{22}
+\qquad\text{(22)}
 $$
 
 Here $\log V\sim j$, and $L_V=j^{1/4-o(1)}$, whereas the denominator is a power of $\log j$.
@@ -326,16 +326,16 @@ Here $\log V\sim j$, and $L_V=j^{1/4-o(1)}$, whereas the denominator is a power 
 Let $Q_{c,\mathrm{tr}}$ denote (18) restricted to $v\ge T$. The Gaussian field omitted by this restriction is independent of the retained white-noise field conditional on $f$, and its coordinate variances are at most
 
 $$
-\frac1T\int_{c_0T}^\infty a(u)^2e^{-2Wu/T}\,du.
-\tag{23}
+\frac1T\int_{c_0T}^\infty a(u)^2e^{-2Wu/T}\thinspace{}du.
+\qquad\text{(23)}
 $$
 
 From (1)–(3), this is at most
 
 $$
-C K_f^2\,\frac{e^{-2c_0W}}W j^{2\gamma}+V_E,\qquad
+C K_f^2\thinspace{}\frac{e^{-2c_0W}}W j^{2\gamma}+V_E,\qquad
 \mathbb E V_E\ll e^{-2c_0W}/W.
-\tag{24}
+\qquad\text{(24)}
 $$
 
 The elementary integral estimate here follows by substituting $u=c_0T+vT/W$.
@@ -354,7 +354,7 @@ Let $t_0=\min_i t_i$, and let $C_{\mathrm{white}}$ be the covariance
 $$
 (C_{\mathrm{white}})_{ik}
 =\int_T^\infty a(t_i-v)a(t_k-v)\frac{dv}{v}.
-\tag{25}
+\qquad\text{(25)}
 $$
 
 Set $\Delta=\operatorname{diag}(e^{-\sigma(t_i-t_0)})$. An exact pointwise comparison of the scalar integration weights gives
@@ -363,7 +363,7 @@ $$
 \Delta^{-1}Q_{c,\mathrm{tr}}\Delta^{-1}
 \preceq \beta e^{2\sigma D_{\mathrm{width}}}C_{\mathrm{white}},
 \qquad D_{\mathrm{width}}=\max_i t_i-\min_i t_i\le D.
-\tag{26}
+\qquad\text{(26)}
 $$
 
 Indeed, the left-hand integrand has scalar weight
@@ -374,7 +374,7 @@ Thus Anderson's inequality and (22)–(24) give a diverging absolute maximum for
 
 $$
 Z_i=\frac1{e^{t_i/2}}\sum_{e^T<p\le e^{t_i}}N_pS(e^{t_i}/p).
-\tag{27}
+\qquad\text{(27)}
 $$
 
 For clarity about conditioning: (14) and (18) use unbounded inner times. Whenever conditioning on the old signs $p\le X$, complete them with an **auxiliary independent continuation**, independent of the Gaussian noises. It agrees with the actual old function. The fields (25) and (27) use only old values because $t_i-T<T$; they are unchanged by the continuation. All spectral and tail comparisons may be conditioned on the auxiliary full function and then averaged over its continuation. The actual fresh Rademacher signs are never included in this conditioning. Although the auxiliary continuation may change with $T$, its full law is always the same fixed-prefix law $Q$. Thus the truncation of $K_f$ in the tail argument uses a tight family with one fixed distribution, not a common pathwise constant across continuations.
@@ -383,7 +383,7 @@ Finally replace the $N_p$'s in (27) by the actual fresh signs:
 
 $$
 Y_i=\frac1{e^{t_i/2}}\sum_{e^T<p\le e^{t_i}}\varepsilon_pS(e^{t_i}/p).
-\tag{28}
+\qquad\text{(28)}
 $$
 
 Conditional on the old signs these are linear sums of independent signs. The multivariate normal approximation used by Harper applies also to the doubled coordinate set $(Y_i,-Y_i)$. For a fixed smoothing margin, its error tends to zero **deterministically** here: writing $m_T=O(T)$ for the grid size and using $|S(z)|\le z$, the two error terms are bounded by constants times
@@ -391,7 +391,7 @@ Conditional on the old signs these are linear sums of independent signs. The mul
 $$
 m_T^2 e^{(\beta-3/2)T}
 +m_T^3 e^{(3\beta/2-2)T}=o(1).
-\tag{29}
+\qquad\text{(29)}
 $$
 
 Both exponents are negative because $\beta<4/3$. The same bounds apply to any old-measurable retained subset.
@@ -399,15 +399,15 @@ Both exponents are negative because $\beta<4/3$. The same bounds apply to any ol
 We have therefore established the following robust crossing statement. For every fixed finite-prime conditional law $Q$, every deterministic narrow grid as above, every old-measurable retained subset $J_T$ of fixed positive density, and every fixed $K>0$,
 
 $$
-Q\!\left(\max_{i\in J_T}|Y_i|>K\right)\longrightarrow1.
-\tag{30}
+Q\negthinspace{}\left(\max_{i\in J_T}|Y_i|>K\right)\longrightarrow1.
+\qquad\text{(30)}
 $$
 
 Joint conditional symmetry gives
 
 $$
-\liminf_{T\to\infty}Q\!\left(\max_{i\in J_T}Y_i>K\right)\ge\frac12.
-\tag{31}
+\liminf_{T\to\infty}Q\negthinspace{}\left(\max_{i\in J_T}Y_i>K\right)\ge\frac12.
+\qquad\text{(31)}
 $$
 
 This last constant is independent of the finite initial assignment.
@@ -417,33 +417,33 @@ This last constant is independent of the finite initial assignment.
 Put
 
 $$
-C(f)=\sup_{t\ge0}a(t),\qquad E_M=\{C(f)\le M\}.
+C(f)=\sup_{t\ge0}a(t),\qquad E_M=\lbrace{}C(f)\le M\rbrace{}.
 $$
 
-The failure of (T) is $\{C(f)<\infty\}$: the function $a$ is bounded on compact intervals, and integer and real positive excursions are equivalent.
+The failure of (T) is $\lbrace{}C(f)<\infty\rbrace{}$: the function $a$ is bounded on compact intervals, and integer and real positive excursions are equivalent.
 
-Suppose this failure event has positive probability. By conditional-probability convergence along finite prime prefixes, and then $E_M\uparrow\{C<\infty\}$, for any sufficiently small fixed $\delta>0$ there exist a finite-prime cylinder $C_0$, its conditional law $Q$, and finite $M\ge1$, such that
+Suppose this failure event has positive probability. By conditional-probability convergence along finite prime prefixes, and then $E_M\uparrow\lbrace{}C<\infty\rbrace{}$, for any sufficiently small fixed $\delta>0$ there exist a finite-prime cylinder $C_0$, its conditional law $Q$, and finite $M\ge1$, such that
 
 $$
 Q(E_M)>1-\delta.
-\tag{32}
+\qquad\text{(32)}
 $$
 
 On $E_M$, (5) and positivity of the real Euler product imply
 
 $$
-0\le\int_0^\infty a(t)e^{-t/T}\,dt,
+0\le\int_0^\infty a(t)e^{-t/T}\thinspace{}dt,
 \qquad
-\int_0^\infty a^-(t)e^{-t/T}\,dt\le MT.
-\tag{33}
+\int_0^\infty a^-(t)e^{-t/T}\thinspace{}dt\le MT.
+\qquad\text{(33)}
 $$
 
 Thus, for every $b>0$,
 
 $$
-\int_{\alpha T}^{\beta T}Q(a(t)<-b)\,dt
+\int_{\alpha T}^{\beta T}Q(a(t)<-b)\thinspace{}dt
 \le \delta(\beta-\alpha)T+e^\beta MT/b.
-\tag{34}
+\qquad\text{(34)}
 $$
 
 Let $\mathcal F_X=\sigma(\varepsilon_p:p\le X)$, $X=e^T$, and
@@ -452,22 +452,22 @@ For $t<2T$, complete multiplicativity gives the exact splitting
 
 $$
 a(t)=w_T(t)+Y_t
-\tag{35}
+\qquad\text{(35)}
 $$
 
 with the fresh linear field (28). Its conditional symmetry implies, under $Q$ once the fixed prefix lies below $X$,
 
 $$
 Q(w_T(t)<-b)\le2Q(a(t)<-b).
-\tag{36}
+\qquad\text{(36)}
 $$
 
 Partition almost all of $[\alpha T,\beta T]$ into blocks of length $2\pi m_T$, where $m_T=\lfloor D/(2\pi)\rfloor$, and average a $2\pi$-spaced grid over its shift in $[0,2\pi)$. Averaging jointly over blocks and shifts, (34)–(36) yield a **deterministic** block and shift with
 
 $$
-\mathbb E_Q\frac{\#\{i:w_T(t_i)<-b\}}{m_T}
+\mathbb E_Q\frac{\#\lbrace{}i:w_T(t_i)<-b\rbrace{}}{m_T}
 \le2\delta+\frac{2e^\beta M}{b(\beta-\alpha)}+o(1).
-\tag{37}
+\qquad\text{(37)}
 $$
 
 The discarded interval has length $O(D)=o(T)$. Choosing the block by these probabilities uses no realized signs or future randomness. In particular there is no factor $T/D$ in (37).
@@ -475,14 +475,14 @@ The discarded interval has length $O(D)=o(T)$. Choosing the block by these proba
 Fix $0<\rho<1$. Markov's inequality shows that the good set
 
 $$
-G_T=\{i:w_T(t_i)\ge-b\}
+G_T=\lbrace{}i:w_T(t_i)\ge-b\rbrace{}
 $$
 
 has at least $\rho m_T$ elements except on an event of probability at most
 
 $$
 \frac{2\delta+2e^\beta M/[b(\beta-\alpha)]}{1-\rho}+o(1).
-\tag{38}
+\qquad\text{(38)}
 $$
 
 Use $J_T=G_T$ when this size condition holds and the full grid otherwise. This selector is old-measurable and always has the required size.
@@ -493,7 +493,7 @@ $$
 \frac12\le
 \delta+
 \frac{2\delta+2e^\beta M/[b(\beta-\alpha)]}{1-\rho}.
-\tag{39}
+\qquad\text{(39)}
 $$
 
 Choose $\delta>0$ small enough that
