@@ -1,0 +1,46 @@
+# Lean / Lake build products
+/.lake/
+/build/
+*.olean
+*.ilean
+*.c
+*.o
+
+# Editor and OS metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local agent and environment state
+.claude/
+.codex/
+.env
+.env.*
+!.env.example
+.direnv/
+
+# Auxiliary scripting caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# TeX and document build products
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+missfont.log
+

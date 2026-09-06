@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite it using the metadata below."
+title: "Erdős Problem #1144: A Lean 4 proof of almost-sure positive unboundedness"
+version: 1.0.0
+date-released: 2026-09-06
+type: software
+license: Apache-2.0
+authors:
+  - given-names: "Sigurd"
+    family-names: "Høystad"
+repository-code: "https://github.com/saasom/Erdos1144"
+url: "https://github.com/saasom/Erdos1144/releases/tag/v1.0.0"
+abstract: >-
+  A kernel-checked Lean 4 proof that the partial sums of a completely
+  multiplicative random function with independent fair signs on the primes,
+  normalized by the square root of the cutoff, have almost surely infinite
+  positive limsup. The public theorem has no hypotheses and its axiom
+  dependencies are exactly propext, Classical.choice, and Quot.sound.
+keywords:
+  - "Lean 4"
+  - "formal proof"
+  - "probabilistic number theory"
+  - "random multiplicative functions"
+  - "Erdős problems"

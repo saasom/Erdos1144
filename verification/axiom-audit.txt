@@ -1,0 +1,6 @@
+warning: mathlib: repository '/private/tmp/erdos1144-publication/.lake/packages/mathlib' has local changes
+'Erdos.Problem1144.candidate_scheduledGaussianRobustCrossing_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos.Problem1144.erdos1144' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos.Problem1144.erdos1144 : Erdos.Problem1144.Erdos1144
