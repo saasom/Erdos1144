@@ -2,6 +2,9 @@
 
 [![Verify Lean proof](https://github.com/saasom/Erdos1144/actions/workflows/verify.yml/badge.svg)](https://github.com/saasom/Erdos1144/actions/workflows/verify.yml)
 
+**Human-readable proof:** [Web writeup](paper/erdos1144_proof_candidate.md) ·
+[Typeset PDF](paper/erdos1144_proof_candidate.pdf)
+
 This repository contains a kernel-checked Lean 4 proof of the positive
 unboundedness assertion in [Erdős Problem #1144](https://www.erdosproblems.com/1144).
 Independently assign a fair sign to every prime and extend the signs
@@ -100,10 +103,12 @@ bound. All analytic inputs to the final theorem are proved in Lean.
 
 The [completed proof guide](notes/1144/complete_proof.md) describes the exact
 interfaces. The [original informal candidate](paper/erdos1144_proof_candidate.md)
-is retained as a dated research artifact from 5 September 2026. The
-formalization completed on 6 September is authoritative for the checked
-result. Its analytic inputs are proved in Lean, as described in the
-completed proof guide.
+is retained as a dated exposition from 5 September 2026, with corrected
+math rendering and a [typeset PDF](paper/erdos1144_proof_candidate.pdf).
+Its mathematical claims are unchanged. The formalization completed on
+6 September is authoritative for the checked result; no line-by-line
+correspondence between the exposition and Lean is claimed. Its analytic
+inputs are proved in Lean, as described in the completed proof guide.
 
 ## Sources, attribution and citation
 
